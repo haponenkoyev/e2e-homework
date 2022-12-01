@@ -1,0 +1,155 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1669854235032' stop='1669854245929'>
+    <name>Bootcamp E2E: </name>
+    <title>Bootcamp E2E: </title>
+    <test-cases>
+        <test-case start='1669854235032' status='passed' stop='1669854235034'>
+            <name></name>
+            <title></title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-107.0.5304.107'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1669854235034' status='passed' stop='1669854238319'>
+            <name>Given I open home page</name>
+            <title>Given I open home page</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-107.0.5304.107'/>
+            </parameters>
+            <steps>
+                <step start='1669854235035' status='passed' stop='1669854238315'>
+                    <name>POST /session/:sessionId/url</name>
+                    <title>POST /session/:sessionId/url</title>
+                    <attachments>
+                        <attachment title='Request' source='1bbde473-e428-44cd-9b48-a1cc94ca63c9-attachment.json' type='application/json' size='38'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1669854238316' status='undefined'>
+                    <name>POST /session/:sessionId/refresh</name>
+                    <title>POST /session/:sessionId/refresh</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+        <test-case start='1669854238319' status='broken' stop='1669854245923'>
+            <name>When I enter "Windows" in search bar</name>
+            <title>When I enter "Windows" in search bar</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-107.0.5304.107'/>
+            </parameters>
+            <steps>
+                <step start='1669854238321' status='passed' stop='1669854240390'>
+                    <name>POST /session/:sessionId/element</name>
+                    <title>POST /session/:sessionId/element</title>
+                    <attachments>
+                        <attachment title='Request' source='e4f0c4fb-bfdd-484a-8a5c-3719a951474a-attachment.json' type='application/json' size='62'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1669854240455' status='passed' stop='1669854241331'>
+                    <name>POST /session/:sessionId/element/aef9f2dd-7825-4ec9-8401-dcff689c3d8c/clear</name>
+                    <title>POST /session/:sessionId/element/aef9f2dd-7825-4ec9-8401-dcff689c3d8c/clear</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1669854241339' status='passed' stop='1669854241465'>
+                    <name>POST /session/:sessionId/element/aef9f2dd-7825-4ec9-8401-dcff689c3d8c/value</name>
+                    <title>POST /session/:sessionId/element/aef9f2dd-7825-4ec9-8401-dcff689c3d8c/value</title>
+                    <attachments>
+                        <attachment title='Request' source='f38a1b07-75e1-44ab-96a0-b86681c3555b-attachment.json' type='application/json' size='27'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1669854241466' status='passed' stop='1669854241527'>
+                    <name>POST /session/:sessionId/element</name>
+                    <title>POST /session/:sessionId/element</title>
+                    <attachments>
+                        <attachment title='Request' source='9cb34514-1f4d-410b-919c-b8a58acab5b5-attachment.json' type='application/json' size='72'/>
+                        <attachment title='Response' source='29b5a672-42da-4032-9222-c0603e23e11d-attachment.json' type='application/json' size='83'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1669854241531' status='broken' stop='1669854245922'>
+                    <name>POST /session/:sessionId/element/04e1c9c8-3951-4bf4-8613-708ba174247d/click</name>
+                    <title>POST /session/:sessionId/element/04e1c9c8-3951-4bf4-8613-708ba174247d/click</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments>
+                <attachment title='Response' source='fe302306-581a-4de3-83ea-39212245d9e0-attachment.json' type='application/json' size='83'/>
+            </attachments>
+            <failure>
+                <message>element click intercepted: element click intercepted: Element &lt;button class="ico ico-search">...&lt;/button> is not clickable at point (479, 40). Other element would receive the click: &lt;img class="modal-Website-img" src="https://promotions.newegg.com/22-2133/Homepage_Popup_Desktop.png" alt="CYBER MONDAY EXTENDED"></message>
+                <stack-trace>element click intercepted: element click intercepted: Element &lt;button class="ico ico-search">...&lt;/button> is not clickable at point (479, 40). Other element would receive the click: &lt;img class="modal-Website-img" src="https://promotions.newegg.com/22-2133/Homepage_Popup_Desktop.png" alt="CYBER MONDAY EXTENDED">
+                  (Session info: chrome=107.0.5304.107)
+                    at getErrorFromResponseBody (C:\Users\djujy\e2e-homework\node_modules\webdriver\build\utils.js:198:12)
+                    at NodeJSRequest._request (C:\Users\djujy\e2e-homework\node_modules\webdriver\build\request\index.js:166:60)
+                    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+                    at async Element.wrapCommandFn (C:\Users\djujy\e2e-homework\node_modules\@wdio\utils\build\shim.js:137:29)
+                    at async Element.wrapCommandFn (C:\Users\djujy\e2e-homework\node_modules\@wdio\utils\build\shim.js:137:29)
+                    at async Element.elementErrorHandlerCallbackFn (C:\Users\djujy\e2e-homework\node_modules\webdriverio\build\middlewares.js:24:32)
+                    at async Element.wrapCommandFn (C:\Users\djujy\e2e-homework\node_modules\@wdio\utils\build\shim.js:137:29)
+                    at async Element.wrapCommandFn (C:\Users\djujy\e2e-homework\node_modules\@wdio\utils\build\shim.js:137:29)
+                    at async Element.elementErrorHandlerCallbackFn (C:\Users\djujy\e2e-homework\node_modules\webdriverio\build\middlewares.js:24:32)
+                    at async Element.wrapCommandFn (C:\Users\djujy\e2e-homework\node_modules\@wdio\utils\build\shim.js:137:29)</stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1669854245923' status='broken' stop='1669854245924'>
+            <name>Then I see at least one "item" appears</name>
+            <title>Then I see at least one "item" appears</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-107.0.5304.107'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>Step "I see at least one "item" appears" is not defined. You can ignore this error by setting cucumberOpts.ignoreUndefinedDefinitions as true.</message>
+                <stack-trace>Step "I see at least one "item" appears" is not defined. You can ignore this error by setting cucumberOpts.ignoreUndefinedDefinitions as true.
+                	at Feature(C:\Users\djujy\e2e-homework\features\e2e.feature):1:1
+                	at Scenario():7:1
+                	at Step(I see at least one "item" appears):10:1
+                </stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1669854245925' status='passed' stop='1669854245926'>
+            <name></name>
+            <title></title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-107.0.5304.107'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>
