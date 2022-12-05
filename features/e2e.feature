@@ -6,7 +6,7 @@ Given I open home page
 
 Scenario:
 When I enter "Windows" in search bar
-Then I see at least one item appear
+Then I see  item results
 
 Examples:
 |item   |
@@ -14,7 +14,7 @@ Examples:
 
 Scenario:
 When I open "Today's Best Deals" tab
-Then I check if I go to the main page
+Then I go to the main page
 
 Examples:
 |page     |

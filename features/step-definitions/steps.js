@@ -14,7 +14,7 @@ When('I enter {word} in search bar', async (item) => {
 
 });
 
-Then('I see at least one item appear', async () => {
+Then('I see  item results', async () => {
    const listItems = await $$('div.list-wrap');
    await expect(listItems.length >= 1);
 });
@@ -27,7 +27,7 @@ When('I open {string} tab', async (page) => {
 
 });
 
-Then('I check if I go to the main page', async () => {
+Then('I go to the main page', async () => {
     await expect (`https://www.newegg.com`);
    
     
